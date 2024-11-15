@@ -1,7 +1,7 @@
 import pymongo
 import bson
 
-client = pymongo.MongoClient("mongodb+srv://devdroidtutorial:devdroidtutorial@cluster0.y44js.mongodb.net/", tlsAllowInvalidCertificates=True)
+client = pymongo.MongoClient("Your_database_url", tlsAllowInvalidCertificates=True)
 
 note_db = client["NoteApp"]
 note_collection = note_db["notes"]
